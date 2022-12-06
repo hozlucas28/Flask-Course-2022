@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="copyright" content="Lucas Hoz" />
+		<meta name="robots" content="index, follow" />
+		<meta name="Author" lang="es" content="Lucas Hoz" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="keywords" content="Udemy, HTML, Python, Flask" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Curso de Flask (framework de Python) de la plataforma Udemy." />
+		<title>Flask Web - Saludar</title>
+	</head>
+	<body>
+		<!-- ----------------------------- Encabezado ------------------------------ -->
+		<header>
+			{% if name != None %} <!-- Abre 'if' -->
+				<h1>¡Buenos Días {{name}}!</h1> <!-- Captura el argumento que le fue enviado por la ruta de acceso -->
+			{% else %}
+				<h1>¡Buenos Días!</h1>
+			{% endif %} <!-- Cierra 'if' -->
+		</header>
+
+		<!-- ------------------------- Contenido Principal ------------------------- -->
+		<main>
+			{% if name != None and age == None %} <!-- Abre 'if' -->
+				<p>Hola {{name}}</p> <!-- Captura el argumento que le fue enviado por la ruta de acceso -->
+			{% elif name != None and age != None %}
+				<p>Hola {{name}} tu edad es {{age}}</p> <!-- Captura el argumento que le fue enviado por la ruta de acceso -->
+			{% else %}
+				<p>Hola</p>
+			{% endif %} <!-- Cierra 'if' -->
+		</main>
+	</body>
+</html>

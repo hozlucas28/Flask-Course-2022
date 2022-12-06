@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="copyright" content="Lucas Hoz" />
+		<meta name="robots" content="index, follow" />
+		<meta name="Author" lang="es" content="Lucas Hoz" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="keywords" content="Udemy, HTML, Python, Flask" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Curso de Flask (framework de Python) de la plataforma Udemy." />
+		<title>Flask Web - Blog</title>
+	</head>
+	<body>
+		<!-- ----------------------------- Encabezado ------------------------------ -->
+		<header>
+			<h1>Mi Blog</h1>
+		</header>
+
+		<!-- ------------------------- Contenido Principal ------------------------- -->
+		<main>
+			{% for post in posts %} <!-- Abre 'for' -->
+				<h2>{{ post.title }}</h2> <!-- Captura el atributo del objeto que le fue enviado -->
+				<p>{{ post.description }}</p> <!-- Captura el atributo del objeto que le fue enviado -->
+			{% endfor %} <!-- Cierra 'for' -->
+			<a href="{{ url_for('index') }}">Ir a Inicio</a> <!-- Establece un enlace, mediante el nombre de la función invocadora de dicha página enlazada -->
+		</main>
+	</body>
+</html>

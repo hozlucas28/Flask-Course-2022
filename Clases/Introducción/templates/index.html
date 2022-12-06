@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="copyright" content="Lucas Hoz" />
+		<meta name="robots" content="index, follow" />
+		<meta name="Author" lang="es" content="Lucas Hoz" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="keywords" content="Udemy, HTML, Python, Flask" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Curso de Flask (framework de Python) de la plataforma Udemy." />
+		<title>Flask Web - Inicio</title>
+	</head>
+	<body>
+		<!-- ----------------------------- Encabezado ------------------------------ -->
+		<header>
+			<h1>{{message}}</h1> <!-- Captura el argumento que le fue enviado -->
+		</header>
+
+		<!-- ------------------------- Contenido Principal ------------------------- -->
+		<main>
+			<img src="{{ url_for('static', filename='./img/Flask-logo.png') }}" alt="" width="250" /> <!-- Carga una imagen -->
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, perferendis.</p>
+			<a href="{{ url_for('blog') }}">Ir a My Blogs</a> <!-- Establece un enlace, mediante el nombre de la función invocadora de dicha página enlazada -->
+		</main>
+	</body>
+</html>
