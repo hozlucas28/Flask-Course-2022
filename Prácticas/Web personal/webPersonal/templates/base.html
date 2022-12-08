@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="copyright" content="Lucas Hoz" />
+		<meta name="robots" content="index, follow" />
+		<meta name="Author" lang="es" content="Lucas Hoz" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="keywords" content="Udemy, HTML, Python, Flask" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Curso de Flask (framework de Python) de la plataforma Udemy." />
+		<title>Web Personal{% block title %}{% endblock %}</title>
+	</head>
+	<body>
+        <!-- ----------------------------- Encabezado ------------------------------ -->
+		<nav>
+            {% block header %}{% endblock %}
+            <!-- Menú de Navegación -->
+		    <ul>
+			    <li>
+				    <a href="{{ url_for('base.home') }}">Inicio</a>
+				    <a href="{{ url_for('projects.projects') }}">Proyectos</a>
+				    <a href="{{ url_for('base.portfolio') }}">Portafolio</a>
+				    <a href="{{ url_for('base.contact') }}">Contacto</a>
+			    </li>
+		    </ul>
+		</nav>
+
+        <!-- ------------------------- Contenido Principal ------------------------- -->
+        {% block content %}{% endblock %}
+
+        <!-- ---------------------------- Pie de Página ---------------------------- -->
+        <footer>
+            <h3>Pie de Página</h3>
+        </footer>
+	</body>
+</html>
