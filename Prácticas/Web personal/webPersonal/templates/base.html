@@ -13,25 +13,28 @@
 	</head>
 	<body>
         <!-- ----------------------------- Encabezado ------------------------------ -->
+		<header>
+			{% block header %}{% endblock %}
+		</header>
+
+		<!-- ------------------------- Menú de Navegación -------------------------- -->
 		<nav>
-            {% block header %}{% endblock %}
-            <!-- Menú de Navegación -->
-		    <ul>
-			    <li>
-				    <a href="{{ url_for('base.home') }}">Inicio</a>
-				    <a href="{{ url_for('projects.projects') }}">Proyectos</a>
-				    <a href="{{ url_for('base.portfolio') }}">Portafolio</a>
-				    <a href="{{ url_for('base.contact') }}">Contacto</a>
-			    </li>
-		    </ul>
+			<ul>
+				<li><a href="{{ url_for('base.home') }}">Inicio</a></li>
+				<li><a href="{{ url_for('projects.index') }}">Proyectos</a></li>
+				<li><a href="{{ url_for('base.portfolio') }}">Portafolio</a></li>
+				<li><a href="{{ url_for('base.contact') }}">Contacto</a></li>
+			</ul>
 		</nav>
 
         <!-- ------------------------- Contenido Principal ------------------------- -->
-        {% block content %}{% endblock %}
+        <main>
+			{% block maincontent %}{% endblock %}
+		</main>
 
         <!-- ---------------------------- Pie de Página ---------------------------- -->
         <footer>
-            <h3>Pie de Página</h3>
+            {% block footer %}{% endblock %}
         </footer>
 	</body>
 </html>

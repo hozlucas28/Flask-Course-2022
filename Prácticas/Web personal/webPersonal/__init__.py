@@ -1,7 +1,36 @@
+# ------------------------------------------------------------------------- #
+# APUNTES:
+# 		   XXX.
+#
+#
+# IMPORTANTE:
+#  			  - app.config.from_object() = Me permite acudir a una clase para
+#                                          definir la configuración de mi
+#                                          aplicación Flask.
+#  			  - SQLAlchemy() = Inicializa la base de datos.
+# ------------------------------------------------------------------------- #
+
+
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+
+# Creación y configuración de la aplicación Flask.
+app = Flask(__name__)
+app.config.from_object("config.DevelopmentConfig")
+
+
+# Inicialización - DB.
+db = SQLAlchemy(app)
+
+
+# Registro de Blueprints
 from webPersonal.views import baseBP
 from webPersonal.projects.views import projectsBP
 
-app = Flask(__name__)
-app.register_blueprint(baseBP)  # Registra el 'blue print' del módulo de vistas.
-app.register_blueprint(projectsBP)  # Registra el 'blue print' del módulo de vistas.
+app.register_blueprint(baseBP)
+app.register_blueprint(projectsBP)
+
+
+# Ejecutar todas las consultas
+with app.app_context():
+    db.create_all()
