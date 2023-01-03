@@ -24,8 +24,8 @@ db = SQLAlchemy(app)
 
 
 # Registro de Blueprints
-from webPersonal.views import baseBP
-from webPersonal.projects.views import projectsBP
+from personalWeb.views import baseBP
+from personalWeb.projects.views import projectsBP
 
 app.register_blueprint(baseBP)
 app.register_blueprint(projectsBP)

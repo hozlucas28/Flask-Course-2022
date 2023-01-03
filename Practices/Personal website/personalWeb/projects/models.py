@@ -10,7 +10,7 @@
 #  			  - XXX.
 # ------------------------------------------------------------------------- #
 
-from webPersonal import db
+from personalWeb import db
 
 
 class Project(db.Model):

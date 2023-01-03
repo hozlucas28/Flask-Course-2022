@@ -15,7 +15,7 @@ class Config:
 
     # Base de datos
     SQLALCHEMY_TRACK_MODIFICATIONS = False
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:289137tx@localhost:3306/webpersonal"
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:289137tx@localhost:3306/personalWeb"
 
 
 # Producción

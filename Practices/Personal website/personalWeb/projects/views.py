@@ -14,8 +14,8 @@
 
 
 from flask import render_template, Blueprint, request, redirect, url_for
-from webPersonal import db
-from webPersonal.projects.models import Project
+from personalWeb import db
+from personalWeb.projects.models import Project
 
 projectsBP = Blueprint("projects", __name__)
 

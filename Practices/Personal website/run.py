@@ -1,4 +1,4 @@
-from webPersonal import app
+from personalWeb import app
 
 if __name__ == "__main__":
     app.run()
