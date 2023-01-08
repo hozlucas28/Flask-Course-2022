@@ -30,7 +30,7 @@
     Installation
 </h2>
 <p>
-    Clone the repository, install <a href="https://www.python.org/" target="_blank">Python</a> (language), <a href="https://flask.palletsprojects.com/en/2.2.x/" target="_blank">Flask framework</a> and use <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> (code editor) with <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" target="_blank">Python</a> and <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance" target="_blank">Pylance</a> (extensions) installed. Then run the Flask project, that you want to test, with the command <code>flask --app &lt;MAIN PYTHON FILE NAME&gt; run</code> in a console, please visit <a href="https://flask.palletsprojects.com/en/2.2.x/quickstart/" target="_blank">Flask - Quick Start</a> for more information.
+    Clone the repository, install <a href="https://www.python.org/" target="_blank">Python</a> (language), <a href="https://flask.palletsprojects.com/en/2.2.x/" target="_blank">Flask framework</a> and use <a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> (code editor) with <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.python" target="_blank">Python</a> and <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance" target="_blank">Pylance</a> (extensions) installed. Then run the Flask project, that you want to test, with the command <code>flask --app &lt;MAIN PYTHON FILE NAME&gt; run</code> in a terminal, please visit <a href="https://flask.palletsprojects.com/en/2.2.x/quickstart/" target="_blank">Flask - Quick Start</a> for more information.
 </p>
 
 <p>
