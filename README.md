@@ -77,7 +77,7 @@
     Acknowledgments
 </h2>
 <p>
-    Thanks to <a href="https://www.udemy.com/user/alex-roel/" target="_blank">Alex Roel</a> teacher to made this course.
+    Thanks to <a href="https://www.udemy.com/user/alex-roel/" target="_blank">Alex Roel</a> teacher to make this course.
 </p>
 
 <h2>
