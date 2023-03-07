@@ -73,7 +73,7 @@
             <a href="https://github.com/hozlucas28/Java-Course-2023" target="_blank">Repository of Java course</a>
         </li>
         <li>
-            <a href="https://github.com/hozlucas28/Java-Movies-Practice-2023" target="_blank">Repository of Java movies practice</a>
+            <a href="https://github.com/hozlucas28/Java-Movie-Catalog-Practice-2023" target="_blank">Repository of Java movie catalog practice</a>
         </li>
         <li>
             <a href="https://github.com/hozlucas28/API-Rest-Express-Course-2022" target="_blank">Repository of API REST - Express course</a>
