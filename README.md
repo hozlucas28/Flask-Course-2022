@@ -16,7 +16,7 @@
 </p>
 
 <p align="center">
-    <img src="https://user-images.githubusercontent.com/88015479/210129528-1e46dfc4-8884-4dd7-9ba3-99c529f27049.png" width="600">
+    <img src="./.github/flask-logo.png" width="600">
 </p>
 
 <h2>
